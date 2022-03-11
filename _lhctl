@@ -1,0 +1,14 @@
+#compdef lhctl
+
+_lhctl() {
+  integer ret=1
+  local -a args
+  args+=(
+    'volume[manage your volumes]'
+    'help[show help]'
+  )
+  _arguments $args[@] && ret=0
+  return ret
+}
+
+_lhctl
